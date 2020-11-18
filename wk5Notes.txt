@@ -1,0 +1,25 @@
+socket.io
+
+let socket = io('http://circuslabs.net:2020');
+
+socket.emit('request roll')
+
+
+
+part 1
+-let the user choose to roll the button any of the dnd dice
+-generate what the result is.
+-show a cool, animated, visual of the dice roll happening
+
+allow user to choose dice type, then enter amount of dice into an input field.
+make a input where you put the amount of dice needed to roll.
+pressing space bar throws the dice.
+
+explore box2d plugin
+
+after pressing space, the amount of dice fall from the top of the roll div container. 
+
+
+
+part 2
+-connect it to the circuslabs dice api

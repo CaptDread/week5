@@ -1,0 +1,64 @@
+
+.gamerow{
+    display: flex;
+}
+
+.diceImg{
+    width: 5em;
+}
+
+
+.rollTrayContainer{
+    background-image: url('../img/1580364991_preview_Pixel1531985551276.gif');
+    background-size: cover;
+    width: 70vw;
+    height: 40vh;
+    margin: 13vh 1.3vw 5vh 1.3vw;
+    border: 1em purple solid;
+    border-radius: 1.3em;
+    justify-content: center
+}
+
+.rollTray{
+    width: 70vw;
+    height: 39vh;
+    display: flex;
+}
+
+/* advent Log */
+.adventLog{
+    width: 70vw;
+    margin: 1.3vh 2vw;
+}
+
+.adventLog h2{
+    font-size: 4.2em;
+    font-weight: 700;
+}
+
+.rollHistory{
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1em 2em;
+}
+
+li h3{
+    font-size: 3em;
+}
+
+li{
+    display: flex;
+}
+
+li p{
+    font-size: 1.8em;
+    margin-top: .5em;
+    margin-left: .5em;
+    word-spacing: 1em;
+}
+
+li span{
+    font-size: 3em;
+    margin-left: 1em;
+    margin-top: .25em;
+}

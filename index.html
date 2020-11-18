@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dread's Dice</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <section class="gamerow">
+        <div class="diceSel">
+            <form class='d4' name='d4'>
+                <img class="diceImg" src="img/LogoMakr-8iwbyx.png" alt="d4">
+                <input type="number" name="d4" class='dieNum'>
+                <input type="button" class="subButt" value="roll" name='d4'>
+            </form>
+            <form class='d6' name='d6'>
+                <img class="diceImg" src="img/LogoMakr-400z2U.png" alt="d6">
+                <input type="number" name="d6" class='dieNum'>
+                <input type="button" class="subButt" value="roll" name='d6'>
+            </form>
+            <form class='d8' name='d8'>
+                <img class="diceImg" src="img/LogoMakr-60LXnq.png" alt="d8">
+                <input type="number" name="d8" class='dieNum'>
+                <input type="button" class="subButt" value="roll" name='d8'>
+            </form>
+            <form class='d10' name='d10'>
+                <img class="diceImg" src="img/LogoMakr-17ZcQ4.png" alt="d10">
+                <input type="number" name="d10" class='dieNum'>
+                <input type="button" class="subButt" value="roll" name='d10'>
+            </form>
+            <form class='d12' name='d12'>
+                <img class="diceImg" src="img/LogoMakr-3A0E7s.png" alt="d12">
+                <input type="number" name="d12" class='dieNum'>
+                <input type="button" class="subButt" value="roll" name='d12'>
+            </form>
+            <form class='d20' name='d20'>
+                <img class="diceImg" src="img/LogoMakr-89tShH.png" alt="d20">
+                <input type="number" name="d20" class='dieNum'>
+                <input type="button" class="subButt" value="roll" name='d20'>
+            </form>
+            <form class='d100' name='d100'>
+                <img class="diceImg" src="img/LogoMakr-1caqcb.png" alt="d100">
+                <input type="number" name="d100" class='dieNum'>
+                <input type="button" class="subButt" value="roll" name='d100'>
+            </form>
+        </div>
+        <div>
+            <div class="rollTrayContainer">
+                <div class="rollTray">
+                    <div class='die'></div>
+                </div>
+            </div>
+            <div class="adventLog">
+                <h2>Adventure's Log</h2>
+                <ul class="rollHistory">
+                    <li>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script>
+    <!-- <script src="js/dreadScript/logo.js"></script> -->
+    <script src='js/getsum.js'></script>
+</body>
+</html>
