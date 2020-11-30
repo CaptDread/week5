@@ -41,24 +41,27 @@ for (let z = 0; z < rollButt.length; z++){
                     console.log(d4Value)
                     newDie.innerHTML = d4Value
                     dreadRolls.textContent += d4Value + ' ';
-                    newDie.style.background = '#fff'
-                    newDie.style.fontSize = '4.2em'
+                    newDie.style.backgroundImage = `URL(img/d4.png)`
+                    newDie.style.backgroundSize = `cover`
+                    newDie.style.paddingTop = `.75em`
+                    newDie.style.fontSize = '3.2em'
                     newDie.style.fontWeight = '700'
-                    newDie.style.width = '1em'
-                    newDie.style.height = '1em'
-                    newDie.style.border = '.13em #000 solid'
-                    newDie.setAttribute(`class`, `die`)
+                    newDie.style.color = `#fff`
+                    newDie.style.width = '2.3em'
+                    newDie.style.height = '1.5em'
+                    newDie.style.textAlign = `center`
+                    newDie.setAttribute(`class`, `die die` + x)
                     rollTray.appendChild(newDie)
                     newDie.style.position = 'relative'
-                    gsap.to('.die', { 
+                    gsap.to('.die' + x, { 
                         duration: 2.5,
-                        ease: "back.inOut(1)",
+                        rotation: Math.random() * 420 + 1000,
+                        ease: "bounce.easeIn",
                         y: 180,
-                        x: Math.random() * 130 + 50,
+                        x: Math.random() * 350 + 50,
                     });
                 }
                 d4Roll()
-                
             }
         } else if (rollButt[z].name === rollButt[1].name){
             let dice = document.querySelectorAll('.die')
@@ -87,20 +90,24 @@ for (let z = 0; z < rollButt.length; z++){
                     console.log(d6Value)
                     newDie.innerHTML = d6Value
                     dreadRolls.textContent += d6Value + ' ';
-                    newDie.style.background = '#fff'
-                    newDie.style.fontSize = '4.2em'
+                    newDie.style.backgroundImage =`URL(img/d6.png)`
+                    newDie.style.backgroundSize = `cover`
+                    newDie.style.paddingTop = '.75em'
+                    newDie.style.fontSize = '3.2em'
                     newDie.style.fontWeight = '700'
-                    newDie.style.width = '1em'
-                    newDie.style.height = '1em'
-                    newDie.style.border = '.13em #000 solid'
-                    newDie.setAttribute(`class`, `die`)
+                    newDie.style.color = `#fff`
+                    newDie.style.width = '2.3em'
+                    newDie.style.height = '1.5em'
+                    newDie.style.textAlign = `center`
+                    newDie.setAttribute(`class`, `die die` + x)
                     rollTray.appendChild(newDie)
                     newDie.style.position = 'relative'
-                    gsap.to('.die', { 
+                    gsap.to('.die' + x, { 
                         duration: 2.5,
-                        ease: "back.inOut(1)",
+                        rotation: Math.random() * 420 + 1000,
+                        ease: "bounce.easeIn",
                         y: 180,
-                        x: Math.random() * 130 + 50,
+                        x: Math.random() * 350 + 50,
                     });
                 }
                 d6Roll()
@@ -132,20 +139,24 @@ for (let z = 0; z < rollButt.length; z++){
                     console.log(d8Value)
                     newDie.innerHTML = d8Value
                     dreadRolls.textContent += d8Value + " ";
-                    newDie.style.background = '#fff'
-                    newDie.style.fontSize = '4.2em'
+                    newDie.style.backgroundImage =`URL(img/d8.png)`
+                    newDie.style.backgroundSize = `cover`
+                    newDie.style.paddingTop = '.75em'
+                    newDie.style.fontSize = '3.2em'
                     newDie.style.fontWeight = '700'
-                    newDie.style.width = '1em'
-                    newDie.style.height = '1em'
-                    newDie.style.border = '.13em #000 solid'
-                    newDie.setAttribute(`class`, `die`)
+                    newDie.style.color = `#fff`
+                    newDie.style.width = '2.3em'
+                    newDie.style.height = '1.5em'
+                    newDie.style.textAlign = `center`
+                    newDie.setAttribute(`class`, `die die` + x)
                     rollTray.appendChild(newDie)
                     newDie.style.position = 'relative'
-                    gsap.to('.die', { 
+                    gsap.to('.die' + x, { 
                         duration: 2.5,
-                        ease: "back.inOut(1)",
+                        rotation: Math.random() * 420 + 1000,
+                        ease: "bounce.easeIn",
                         y: 180,
-                        x: Math.random() * 130 + 50,
+                        x: Math.random() * 350 + 50,
                     });
                 }
                 d8Roll()
@@ -177,20 +188,24 @@ for (let z = 0; z < rollButt.length; z++){
                     console.log(d10Value)
                     newDie.innerHTML = d10Value
                     dreadRolls.textContent += d10Value + " ";
-                    newDie.style.background = '#fff'
-                    newDie.style.fontSize = '4.2em'
+                    newDie.style.backgroundImage = `URL(img/d10.png)`
+                    newDie.style.backgroundSize = `cover`
+                    newDie.style.paddingTop = '.75em'
+                    newDie.style.fontSize = '3.2em'
                     newDie.style.fontWeight = '700'
-                    newDie.style.width = '1em'
-                    newDie.style.height = '1em'
-                    newDie.style.border = '.13em #000 solid'
-                    newDie.setAttribute(`class`, `die`)
+                    newDie.style.color = `#fff`
+                    newDie.style.width = '2.3em'
+                    newDie.style.height = '2em'
+                    newDie.style.textAlign = `center`
+                    newDie.setAttribute(`class`, `die die` + x)
                     rollTray.appendChild(newDie)
                     newDie.style.position = 'relative'
-                    gsap.to('.die', { 
+                    gsap.to('.die' + x, { 
                         duration: 2.5,
-                        ease: "back.inOut(1)",
+                        rotation: Math.random() * 420 + 1000,
+                        ease: "bounce.easeIn",
                         y: 180,
-                        x: Math.random() * 130 + 50,
+                        x: Math.random() * 350 + 50,
                     });
                 }
                 d10Roll()
@@ -222,20 +237,24 @@ for (let z = 0; z < rollButt.length; z++){
                     console.log(d12Value)
                     newDie.innerHTML = d12Value
                     dreadRolls.textContent += d12Value + " ";
-                    newDie.style.background = '#fff'
-                    newDie.style.fontSize = '4.2em'
+                    newDie.style.backgroundImage = `URL(img/d12.png)`
+                    newDie.style.backgroundSize = `cover`
+                    newDie.style.paddingTop = '.75em'
+                    newDie.style.fontSize = '3.2em'
                     newDie.style.fontWeight = '700'
-                    newDie.style.width = '1em'
-                    newDie.style.height = '1em'
-                    newDie.style.border = '.13em #000 solid'
-                    newDie.setAttribute(`class`, `die`)
+                    newDie.style.color = `#fff`
+                    newDie.style.width = '2.4em'
+                    newDie.style.height = '1.5em'
+                    newDie.style.textAlign = `center`
+                    newDie.setAttribute(`class`, `die die` + x)
                     rollTray.appendChild(newDie)
                     newDie.style.position = 'relative'
-                    gsap.to('.die', { 
+                    gsap.to('.die' + x, { 
                         duration: 2.5,
-                        ease: "back.inOut(1)",
+                        rotation: Math.random() * 420 + 1000,
+                        ease: "bounce.easeIn",
                         y: 180,
-                        x: Math.random() * 130 + 50,
+                        x: Math.random() * 350 + 50,
                     });
                 }
                 d12Roll()
@@ -267,20 +286,24 @@ for (let z = 0; z < rollButt.length; z++){
                     console.log(d20Value)
                     newDie.innerHTML = d20Value
                     dreadRolls.textContent += d20Value + " ";
-                    newDie.style.background = '#fff'
-                    newDie.style.fontSize = '4.2em'
+                    newDie.style.backgroundImage = `URL(img/d20.png)`
+                    newDie.style.backgroundSize = `cover`
+                    newDie.style.paddingTop = '.75em'
+                    newDie.style.fontSize = '3.2em'
                     newDie.style.fontWeight = '700'
-                    newDie.style.width = '1em'
-                    newDie.style.height = '1em'
-                    newDie.style.border = '.13em #000 solid'
-                    newDie.setAttribute(`class`, `die`)
+                    newDie.style.color = `#fff`
+                    newDie.style.width = '2.3em'
+                    newDie.style.height = '1.5em'
+                    newDie.style.textAlign = `center`
+                    newDie.setAttribute(`class`, `die die` + x)
                     rollTray.appendChild(newDie)
                     newDie.style.position = 'relative'
-                    gsap.to('.die', { 
+                    gsap.to('.die' + x, { 
                         duration: 2.5,
-                        ease: "back.inOut(1)",
+                        rotation: Math.random() * 420 + 1000,
+                        ease: "bounce.easeIn",
                         y: 180,
-                        x: Math.random() * 130 + 50,
+                        x: Math.random() * 350 + 50,
                     });
                 }
                 d20Roll()
@@ -312,20 +335,24 @@ for (let z = 0; z < rollButt.length; z++){
                     console.log(d100Value)
                     newDie.innerHTML = d100Value
                     dreadRolls.textContent += d100Value + " ";
-                    newDie.style.background = '#fff'
-                    newDie.style.fontSize = '4.2em'
+                    newDie.style.backgroundImage = `URL(img/d8.png)`
+                    newDie.style.backgroundSize = `cover`
+                    newDie.style.paddingTop = '.75em'
+                    newDie.style.fontSize = '3.2em'
                     newDie.style.fontWeight = '700'
-                    newDie.style.width = '1em'
-                    newDie.style.height = '1em'
-                    newDie.style.border = '.13em #000 solid'
-                    newDie.setAttribute(`class`, `die`)
+                    newDie.style.color = `#fff`
+                    newDie.style.width = '2.3em'
+                    newDie.style.height = '1.5em'
+                    newDie.style.textAlign = `center`
+                    newDie.setAttribute(`class`, `die die` + x)
                     rollTray.appendChild(newDie)
                     newDie.style.position = 'relative'
-                    gsap.to('.die', { 
+                    gsap.to('.die' + x, { 
                         duration: 2.5,
-                        ease: "back.inOut(1)",
+                        rotation: Math.random() * 420 + 1000,
+                        ease: "bounce.easeIn",
                         y: 180,
-                        x: Math.random() * 130 + 50,
+                        x: Math.random() * 350 + 50,
                     });
                 }
                 d100Roll()
