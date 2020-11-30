@@ -1,4 +1,9 @@
 
+
+body{
+    text-transform: capitalize;
+}
+
 .gamerow{
     display: flex;
 }
@@ -7,6 +12,12 @@
     width: 5em;
 }
 
+.charName{
+    padding-top: 2em;
+    display: flex;
+    font-size: 1.3em;
+    font-weight: 500;
+}
 
 .rollTrayContainer{
     background-image: url('../img/1580364991_preview_Pixel1531985551276.gif');

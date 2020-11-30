@@ -9,11 +9,14 @@ let rollTray = document.querySelector('.rollTray')
 
 let rollHist = document.querySelector('.rollHistory')
 
+let charName = document.querySelector(`#charInp`)
+
 
 
 for (let z = 0; z < rollButt.length; z++){
     rollButt[z].addEventListener('click', function (){
         console.log(dieNum[z].value + " " + rollButt[z].name)
+        console.log(charName.value)
         if (rollButt[z].name === rollButt[0].name){
             let dice = document.querySelectorAll('.die')
             for (let d = 0; d < dice.length; d++){
@@ -27,7 +30,7 @@ for (let z = 0; z < rollButt.length; z++){
 
             titleDiv.setAttribute('class', 'prevRolls')
 
-            title.innerHTML = 'Dread Rolled'
+            title.innerHTML = charName.value + ' rolled'
 
             rollHist.appendChild(newLi)
             newLi.appendChild(titleDiv)
@@ -57,7 +60,7 @@ for (let z = 0; z < rollButt.length; z++){
                         duration: 2.5,
                         rotation: Math.random() * 420 + 1000,
                         ease: "bounce.easeIn",
-                        y: 180,
+                        y: 170,
                         x: Math.random() * 350 + 50,
                     });
                 }
@@ -76,7 +79,7 @@ for (let z = 0; z < rollButt.length; z++){
 
             titleDiv.setAttribute('class', 'prevRolls')
 
-            title.innerHTML = 'Dread Rolled'
+            title.innerHTML = charName.value + ' rolled'
 
             rollHist.appendChild(newLi)
             newLi.appendChild(titleDiv)
@@ -106,7 +109,7 @@ for (let z = 0; z < rollButt.length; z++){
                         duration: 2.5,
                         rotation: Math.random() * 420 + 1000,
                         ease: "bounce.easeIn",
-                        y: 180,
+                        y: 170,
                         x: Math.random() * 350 + 50,
                     });
                 }
@@ -125,7 +128,7 @@ for (let z = 0; z < rollButt.length; z++){
 
             titleDiv.setAttribute('class', 'prevRolls')
 
-            title.innerHTML = 'Dread Rolled'
+            title.innerHTML = charName.value + ' rolled'
 
             rollHist.appendChild(newLi)
             newLi.appendChild(titleDiv)
@@ -155,7 +158,7 @@ for (let z = 0; z < rollButt.length; z++){
                         duration: 2.5,
                         rotation: Math.random() * 420 + 1000,
                         ease: "bounce.easeIn",
-                        y: 180,
+                        y: 170,
                         x: Math.random() * 350 + 50,
                     });
                 }
@@ -174,7 +177,7 @@ for (let z = 0; z < rollButt.length; z++){
 
             titleDiv.setAttribute('class', 'prevRolls')
 
-            title.innerHTML = 'Dread Rolled'
+            title.innerHTML = charName.value + ' rolled'
 
             rollHist.appendChild(newLi)
             newLi.appendChild(titleDiv)
@@ -204,7 +207,7 @@ for (let z = 0; z < rollButt.length; z++){
                         duration: 2.5,
                         rotation: Math.random() * 420 + 1000,
                         ease: "bounce.easeIn",
-                        y: 180,
+                        y: 170,
                         x: Math.random() * 350 + 50,
                     });
                 }
@@ -223,7 +226,7 @@ for (let z = 0; z < rollButt.length; z++){
 
             titleDiv.setAttribute('class', 'prevRolls')
 
-            title.innerHTML = 'Dread Rolled'
+            title.innerHTML = charName.value + ' rolled'
 
             rollHist.appendChild(newLi)
             newLi.appendChild(titleDiv)
@@ -253,7 +256,7 @@ for (let z = 0; z < rollButt.length; z++){
                         duration: 2.5,
                         rotation: Math.random() * 420 + 1000,
                         ease: "bounce.easeIn",
-                        y: 180,
+                        y: 170,
                         x: Math.random() * 350 + 50,
                     });
                 }
@@ -272,7 +275,7 @@ for (let z = 0; z < rollButt.length; z++){
 
             titleDiv.setAttribute('class', 'prevRolls')
 
-            title.innerHTML = 'Dread Rolled'
+            title.innerHTML = charName.value + ' rolled'
 
             rollHist.appendChild(newLi)
             newLi.appendChild(titleDiv)
@@ -302,7 +305,7 @@ for (let z = 0; z < rollButt.length; z++){
                         duration: 2.5,
                         rotation: Math.random() * 420 + 1000,
                         ease: "bounce.easeIn",
-                        y: 180,
+                        y: 170,
                         x: Math.random() * 350 + 50,
                     });
                 }
@@ -321,7 +324,7 @@ for (let z = 0; z < rollButt.length; z++){
 
             titleDiv.setAttribute('class', 'prevRolls')
 
-            title.innerHTML = 'Dread Rolled'
+            title.innerHTML = charName.value + ' rolled'
 
             rollHist.appendChild(newLi)
             newLi.appendChild(titleDiv)
@@ -351,7 +354,7 @@ for (let z = 0; z < rollButt.length; z++){
                         duration: 2.5,
                         rotation: Math.random() * 420 + 1000,
                         ease: "bounce.easeIn",
-                        y: 180,
+                        y: 170,
                         x: Math.random() * 350 + 50,
                     });
                 }
