@@ -11,7 +11,7 @@ let rollHist = document.querySelector('.rollHistory')
 
 let charName = document.querySelector(`#charInp`)
 
-
+let socket = io('http://circuslabs.net:20202');
 
 for (let z = 0; z < rollButt.length; z++){
     rollButt[z].addEventListener('click', function (){
@@ -37,10 +37,11 @@ for (let z = 0; z < rollButt.length; z++){
             newLi.appendChild(rollTotal)
             titleDiv.appendChild(title)
             titleDiv.appendChild(dreadRolls)
+
             for (let x = 0; x < dieNum[0].value; x++){
                 let newDie = document.createElement('div')
                 let d4Roll = function() {
-                    let d4Value = Math.floor(Math.random() * 4 + 1)
+                    let d4Value = 
                     console.log(d4Value)
                     newDie.innerHTML = d4Value
                     dreadRolls.textContent += d4Value + ' ';
@@ -91,6 +92,11 @@ for (let z = 0; z < rollButt.length; z++){
                 let d6Roll = function() {
                     let d6Value = Math.floor(Math.random() * 6 + 1)
                     console.log(d6Value)
+                    socket.emit('request roll', {
+                    	count: d6Value,
+                    	faces: 6,
+                    	name: charName.value,
+                    })
                     newDie.innerHTML = d6Value
                     dreadRolls.textContent += d6Value + ' ';
                     newDie.style.backgroundImage =`URL(img/d6.png)`
@@ -140,6 +146,11 @@ for (let z = 0; z < rollButt.length; z++){
                 let d8Roll = function() {
                     let d8Value = Math.floor(Math.random() * 8 + 1)
                     console.log(d8Value)
+                    socket.emit('request roll', {
+                    	count: d8Value,
+                    	faces: 8,
+                    	name: charName.value,
+                    })
                     newDie.innerHTML = d8Value
                     dreadRolls.textContent += d8Value + " ";
                     newDie.style.backgroundImage =`URL(img/d8.png)`
@@ -189,6 +200,11 @@ for (let z = 0; z < rollButt.length; z++){
                 let d10Roll = function() {
                     let d10Value = Math.floor(Math.random() * 10 + 1)
                     console.log(d10Value)
+                    socket.emit('request roll', {
+                    	count: d10Value,
+                    	faces: 10,
+                    	name: charName.value,
+                    })
                     newDie.innerHTML = d10Value
                     dreadRolls.textContent += d10Value + " ";
                     newDie.style.backgroundImage = `URL(img/d10.png)`
@@ -238,6 +254,11 @@ for (let z = 0; z < rollButt.length; z++){
                 let d12Roll = function() {
                     let d12Value = Math.floor(Math.random() * 12 + 1)
                     console.log(d12Value)
+                    socket.emit('request roll', {
+                    	count: d12Value,
+                    	faces: 12,
+                    	name: charName.value,
+                    })
                     newDie.innerHTML = d12Value
                     dreadRolls.textContent += d12Value + " ";
                     newDie.style.backgroundImage = `URL(img/d12.png)`
@@ -287,6 +308,11 @@ for (let z = 0; z < rollButt.length; z++){
                 let d20Roll = function() {
                     let d20Value = Math.floor(Math.random() * 20 + 1)
                     console.log(d20Value)
+                    socket.emit('request roll', {
+                    	count: d20Value,
+                    	faces: 20,
+                    	name: charName.value,
+                    })
                     newDie.innerHTML = d20Value
                     dreadRolls.textContent += d20Value + " ";
                     newDie.style.backgroundImage = `URL(img/d20.png)`
@@ -336,6 +362,11 @@ for (let z = 0; z < rollButt.length; z++){
                 let d100Roll = function() {
                     let d100Value = Math.floor(Math.random() * 100 + 1)
                     console.log(d100Value)
+                    socket.emit('request roll', {
+                    	count: d100Value,
+                    	faces: 100,
+                    	name: charName.value,
+                    })
                     newDie.innerHTML = d100Value
                     dreadRolls.textContent += d100Value + " ";
                     newDie.style.backgroundImage = `URL(img/d8.png)`
@@ -365,5 +396,24 @@ for (let z = 0; z < rollButt.length; z++){
 }
 
 
-// rollButt[0].addEventListener('click', function(e){
-// })
+socket.on('rolled', function (data) {
+    console.log(data);
+    
+});
+
+
+// Adding it to the circuslabs
+
+// let socket = io('http://circuslabs.net:20202');
+
+// // how to ask the server for a roll
+// socket.emit('request roll', {
+// 	count: 1,
+// 	faces: 6,
+// 	name: 'chris',
+// });
+
+// // when the server provides a roll for ANYONE (not just you), this is called
+// socket.on('rolled', function (data) {
+// 	console.log(data);
+// });
